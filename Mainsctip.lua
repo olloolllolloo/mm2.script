@@ -1,1 +1,444 @@
-local _a=game:GetService(string.char(80,108,97,121,101,114,115))local _b=game:GetService(string.char(82,117,110,83,101,114,118,105,99,101))local _c=game:GetService(string.char(85,115,101,114,73,110,112,117,116,83,101,114,118,105,99,101))local _d=game:GetService(string.char(87,111,114,107,115,112,97,99,101))local _e=_a.LocalPlayer local _f=_d.CurrentCamera local _g=Instance.new(string.char(83,99,114,101,101,110,71,117,105))_g.Name=string.char(77,77,95,69,83,80,95,71,85,73)_g.ResetOnSpawn=false _g.Parent=_e:WaitForChild(string.char(80,108,97,121,101,114,71,117,105))local _h=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))_h.Name=string.char(77,105,110,105,109,105,122,101,100,66,117,116,116,111,110)_h.Size=UDim2.new(0,50,0,50)_h.Position=UDim2.new(0.5,-25,0.5,-25)_h.BackgroundColor3=Color3.fromRGB(0,0,0)_h.BorderSizePixel=0 _h.Text=string.char(77)_h.TextSize=24 _h.TextColor3=Color3.fromRGB(255,255,255)_h.Font=Enum.Font.GothamBold _h.Parent=_g local _i=Instance.new(string.char(85,73,67,111,114,110,101,114))_i.CornerRadius=UDim.new(0,12)_i.Parent=_h local _j=Instance.new(string.char(70,114,97,109,101))_j.Name=string.char(77,97,105,110,70,114,97,109,101)_j.Size=UDim2.new(0,250,0,170)_j.Position=UDim2.new(0.5,-125,0.5,-85)_j.BackgroundColor3=Color3.fromRGB(0,0,0)_j.BackgroundTransparency=0.1 _j.BorderSizePixel=0 _j.Visible=false _j.Parent=_g local _k=Instance.new(string.char(85,73,67,111,114,110,101,114))_k.CornerRadius=UDim.new(0,15)_k.Parent=_j _j.Active=true _j.Draggable=true local _l=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))_l.Name=string.char(77,105,110,105,109,105,122,101,66,117,116,116,111,110)_l.Size=UDim2.new(0,30,0,30)_l.Position=UDim2.new(1,-35,0,5)_l.BackgroundColor3=Color3.fromRGB(0,0,0)_l.BorderSizePixel=0 _l.Text=string.char(8722)_l.TextSize=18 _l.TextColor3=Color3.fromRGB(255,255,255)_l.Font=Enum.Font.GothamBold _l.Parent=_j local _m=Instance.new(string.char(85,73,67,111,114,110,101,114))_m.CornerRadius=UDim.new(0,8)_m.Parent=_l local _n=Instance.new(string.char(84,101,120,116,76,97,98,101,108))_n.Name=string.char(84,105,116,108,101,76,97,98,101,108)_n.Size=UDim2.new(0,150,0,30)_n.Position=UDim2.new(0,10,0,5)_n.BackgroundTransparency=1 _n.Text=string.char(77,77,32,69,83,80,32,67,111,110,116,114,111,108)_n.TextSize=16 _n.TextColor3=Color3.fromRGB(255,255,255)_n.Font=Enum.Font.Gotham _n.Parent=_j local _o=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))_o.Name=string.char(77,77,69,115,112,66,117,116,116,111,110)_o.Size=UDim2.new(1,-20,0,40)_o.Position=UDim2.new(0,10,0,45)_o.BackgroundColor3=Color3.fromRGB(30,30,30)_o.BorderSizePixel=0 _o.Text=string.char(77,77,32,69,83,80,58,32,79,70,70)_o.TextSize=14 _o.TextColor3=Color3.fromRGB(255,100,100)_o.Font=Enum.Font.Gotham _o.Parent=_j local _p=Instance.new(string.char(85,73,67,111,114,110,101,114))_p.CornerRadius=UDim.new(0,10)_p.Parent=_o local _q=Instance.new(string.char(84,101,120,116,66,117,116,116,111,110))_q.Name=string.char(65,117,116,111,65,105,109,66,117,116,116,111,110)_q.Size=UDim2.new(1,-20,0,40)_q.Position=UDim2.new(0,10,0,95)_q.BackgroundColor3=Color3.fromRGB(30,30,30)_q.BorderSizePixel=0 _q.Text=string.char(65,117,116,111,32,65,105,109,58,32,79,70,70)_q.TextSize=14 _q.TextColor3=Color3.fromRGB(255,100,100)_q.Font=Enum.Font.Gotham _q.Parent=_j local _r=Instance.new(string.char(85,73,67,111,114,110,101,114))_r.CornerRadius=UDim.new(0,10)_r.Parent=_q local _s=Instance.new(string.char(84,101,120,116,76,97,98,101,108))_s.Name=string.char(83,116,97,116,117,115,76,97,98,101,108)_s.Size=UDim2.new(1,-20,0,20)_s.Position=UDim2.new(0,10,0,140)_s.BackgroundTransparency=1 _s.Text=string.char(82,101,100,61,75,110,105,102,101,32,124,32,66,108,117,101,61,71,117,110,32,124,32,71,114,101,101,110,61,78,111,32,87,101,97,112,111,110)_s.TextSize=10 _s.TextColor3=Color3.fromRGB(150,150,150)_s.Font=Enum.Font.Gotham _s.Parent=_j local _t=false local _u=false local _v={}local _w=nil local function _x(_y)_y=string.lower(_y)return string.find(_y,string.char(107,110,105,102,101))or string.find(_y,string.char(109,97,99,104,101,116,101))or string.find(_y,string.char(100,97,103,103,101,114))or string.find(_y,string.char(98,108,97,100,101))or string.find(_y,string.char(115,119,111,114,100))or string.find(_y,string.char(1085,1086,1078))end local function _z(_y)_y=string.lower(_y)return string.find(_y,string.char(103,117,110))or string.find(_y,string.char(112,105,115,116,111,108))or string.find(_y,string.char(114,101,118,111,108,118,101,114))or string.find(_y,string.char(114,105,102,108,101))or string.find(_y,string.char(115,109,103))or string.find(_y,string.char(115,104,111,116,103,117,110))or string.find(_y,string.char(119,101,97,112,111,110))or string.find(_y,string.char(1087,1080,1089,1090,1086,1083,1077,1090))end local function _A(_B)if not _B.Character then returnstring.char(117,110,107,110,111,119,110)end local _C=false local _D=false local _E=_B:FindFirstChild(string.char(66,97,99,107,112,97,99,107))if _E then for _F,_H in pairs(_E:GetChildren())do if _H:IsA(string.char(84,111,111,108))then local _y=_H.Name if _x(_y)then _C=true end if _z(_y)then _D=true end end end end for _F,_H in pairs(_B.Character:GetChildren())do if _H:IsA(string.char(84,111,111,108))then local _y=_H.Name if _x(_y)then _C=true end if _z(_y)then _D=true end end end if _C then returnstring.char(109,117,114,100,101,114,101,114)elseif _D then returnstring.char(115,104,101,114,105,102,102)else returnstring.char(105,110,110,111,99,101,110,116)end end local function _I(_J)if not _f then return nil end local _K=nil local _L=math.huge local _M=_f.CFrame.Position if _J==string.char(109,117,114,100,101,114,101,114)then for _F,_B in pairs(_a:GetPlayers())do if _B~=_e and _B.Character and _B.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))and _B.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100))and _B.Character.Humanoid.Health>0 then local _N=_A(_B)if _N==string.char(115,104,101,114,105,102,102)then local _O=(_M-_B.Character.HumanoidRootPart.Position).Magnitude if _O<_L then _L=_O _K=_B end end end end if not _K then _L=math.huge for _F,_B in pairs(_a:GetPlayers())do if _B~=_e and _B.Character and _B.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))and _B.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100))and _B.Character.Humanoid.Health>0 then local _N=_A(_B)if _N==string.char(105,110,110,111,99,101,110,116)then local _O=(_M-_B.Character.HumanoidRootPart.Position).Magnitude if _O<_L then _L=_O _K=_B end end end end end elseif _J==string.char(115,104,101,114,105,102,102)then for _F,_B in pairs(_a:GetPlayers())do if _B~=_e and _B.Character and _B.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))and _B.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100))and _B.Character.Humanoid.Health>0 then local _N=_A(_B)if _N==string.char(109,117,114,100,101,114,101,114)then local _O=(_M-_B.Character.HumanoidRootPart.Position).Magnitude if _O<_L then _L=_O _K=_B end end end end end return _K end local function _P()if _w then _w:Disconnect()_w=nil end _w=_b.RenderStepped:Connect(function()if not _u then if _w then _w:Disconnect()_w=nil end return end if not _f then _f=_d.CurrentCamera return end local _Q=_A(_e)if _Q==string.char(105,110,110,111,99,101,110,116)then return end local _R=_I(_Q)if _R and _R.Character and _R.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100,82,111,111,116,80,97,114,116))and _R.Character:FindFirstChild(string.char(72,117,109,97,110,111,105,100))and _R.Character.Humanoid.Health>0 then local _S=_R.Character.HumanoidRootPart.Position local _T=_f.CFrame.Position _f.CFrame=CFrame.lookAt(_T,_S)end end)end local _U=false local _V=nil local _W=nil _h.InputBegan:Connect(function(_X)if _X.UserInputType==Enum.UserInputType.Touch then _U=true _V=_X.Position _W=_h.Position _X.Changed:Connect(function()if _X.UserInputState==Enum.UserInputState.End then _U=false end end)end end)_h.InputChanged:Connect(function(_X)if _U and _X.UserInputType==Enum.UserInputType.Touch then local _Y=_X.Position-_V _h.Position=UDim2.new(_W.X.Scale,_W.X.Offset+_Y.X,_W.Y.Scale,_W.Y.Offset+_Y.Y)end end)_h.MouseButton1Click:Connect(function()if not _U then _h.Visible=false _j.Visible=true end end)_l.MouseButton1Click:Connect(function()_j.Visible=false _h.Visible=true end)local function _Z()if _t then _t=false for _F,_aa in pairs(_v)do if _aa and _aa.Parent then _aa:Destroy()end end _v={}_o.Text=string.char(77,77,32,69,83,80,58,32,79,70,70)_o.TextColor3=Color3.fromRGB(255,100,100)else _t=true _o.Text=string.char(77,77,32,69,83,80,58,32,79,78)_o.TextColor3=Color3.fromRGB(100,255,100)spawn(function()while _t do for _F,_B in pairs(_a:GetPlayers())do if _B==_e or not _B.Character then continue end local _J=_A(_B)local _ba=_B.Character:FindFirstChild(string.char(77,77,69,115,112,72,105,103,104,108,105,103,104,116))if not _ba then _ba=Instance.new(string.char(72,105,103,104,108,105,103,104,116))_ba.Name=string.char(77,77,69,115,112,72,105,103,104,108,105,103,104,116)_ba.FillTransparency=0.2 _ba.OutlineTransparency=0 _ba.DepthMode=Enum.HighlightDepthMode.AlwaysOnTop _ba.Parent=_B.Character table.insert(_v,_ba)end if _J==string.char(109,117,114,100,101,114,101,114)then _ba.FillColor=Color3.fromRGB(255,0,0)_ba.OutlineColor=Color3.fromRGB(255,0,0)elseif _J==string.char(115,104,101,114,105,102,102)then _ba.FillColor=Color3.fromRGB(0,0,255)_ba.OutlineColor=Color3.fromRGB(0,0,255)else _ba.FillColor=Color3.fromRGB(0,255,0)_ba.OutlineColor=Color3.fromRGB(0,255,0)end end wait(0.1)end end)end end local function _ca()_u=not _u if _u then _q.Text=string.char(65,117,116,111,32,65,105,109,58,32,79,78)_q.TextColor3=Color3.fromRGB(100,255,100)_f=_d.CurrentCamera _P()else _q.Text=string.char(65,117,116,111,32,65,105,109,58,32,79,70,70)_q.TextColor3=Color3.fromRGB(255,100,100)if _w then _w:Disconnect()_w=nil end end end _o.MouseButton1Click:Connect(_Z)_q.MouseButton1Click:Connect(_ca)_a.PlayerRemoving:Connect(function(_B)local _ba=_B.Character and _B.Character:FindFirstChild(string.char(77,77,69,115,112,72,105,103,104,108,105,103,104,116))if _ba then _ba:Destroy()for _da,_aa in pairs(_v)do if _aa==_ba then table.remove(_v,_da)break end end end end)_e.CharacterAdded:Connect(function()if _u then wait(0.5)_f=_d.CurrentCamera _P()end end)print(string.char(77,77,32,69,83,80,32,72,97,99,107,32,119,105,116,104,32,73,110,115,116,97,110,116,32,65,117,116,111,32,65,105,109,32,76,111,97,100,101,100,33))print(string.char(84,97,112,32,39,77,39,32,116,111,32,111,112,101,110,32,99,111,110,116,114,111,108,32,112,97,110,101,108))print(string.char(82,101,100,32,61,32,77,117,114,100,101,114,101,114,32,124,32,66,108,117,101,32,61,32,83,104,101,114,105,102,102,32,124,32,71,114,101,101,110,32,61,32,73,110,110,111,99,101,110,116))print(string.char(65,117,116,111,32,65,105,109,58,32,73,78,83,84,65,78,84,32,76,79,67,75,32,45,32,77,117,114,100,101,114,101,114,32,45,62,32,83,104,101,114,105,102,102,32,40,111,114,32,73,110,110,111,99,101,110,116,41,44,32,83,104,101,114,105,102,102,32,45,62,32,77,117,114,100,101,114,101,114))
+if not pcall(function() return game:GetService("Players") end) then return end
+-- // MM ESP - Murder Mystery ESP Hack with Auto Aim
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local UserInputService = game:GetService("UserInputService")
+local Workspace = game:GetService("Workspace")
+local player = Players.LocalPlayer
+local camera = Workspace.CurrentCamera
+
+-- // Create GUI
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "MM_ESP_GUI"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = player:WaitForChild("PlayerGui")
+
+-- // Minimized Button (квадратик с буквой М)
+local minimizedButton = Instance.new("TextButton")
+minimizedButton.Name = "MinimizedButton"
+minimizedButton.Size = UDim2.new(0, 50, 0, 50)
+minimizedButton.Position = UDim2.new(0.5, -25, 0.5, -25)
+minimizedButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+minimizedButton.BorderSizePixel = 0
+minimizedButton.Text = "M"
+minimizedButton.TextSize = 24
+minimizedButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+minimizedButton.Font = Enum.Font.GothamBold
+minimizedButton.Parent = screenGui
+
+local buttonCorner = Instance.new("UICorner")
+buttonCorner.CornerRadius = UDim.new(0, 12)
+buttonCorner.Parent = minimizedButton
+
+-- // Main Frame (развернутое окно)
+local mainFrame = Instance.new("Frame")
+mainFrame.Name = "MainFrame"
+mainFrame.Size = UDim2.new(0, 250, 0, 170)
+mainFrame.Position = UDim2.new(0.5, -125, 0.5, -85)
+mainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+mainFrame.BackgroundTransparency = 0.1
+mainFrame.BorderSizePixel = 0
+mainFrame.Visible = false
+mainFrame.Parent = screenGui
+
+local frameCorner = Instance.new("UICorner")
+frameCorner.CornerRadius = UDim.new(0, 15)
+frameCorner.Parent = mainFrame
+
+-- // Сделать окно перетаскиваемым пальцем
+mainFrame.Active = true
+mainFrame.Draggable = true
+
+-- // Свернуть кнопка (сверху)
+local minimizeButton = Instance.new("TextButton")
+minimizeButton.Name = "MinimizeButton"
+minimizeButton.Size = UDim2.new(0, 30, 0, 30)
+minimizeButton.Position = UDim2.new(1, -35, 0, 5)
+minimizeButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+minimizeButton.BorderSizePixel = 0
+minimizeButton.Text = "−"
+minimizeButton.TextSize = 18
+minimizeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+minimizeButton.Font = Enum.Font.GothamBold
+minimizeButton.Parent = mainFrame
+
+local minCorner = Instance.new("UICorner")
+minCorner.CornerRadius = UDim.new(0, 8)
+minCorner.Parent = minimizeButton
+
+-- // Заголовок
+local titleLabel = Instance.new("TextLabel")
+titleLabel.Name = "TitleLabel"
+titleLabel.Size = UDim2.new(0, 150, 0, 30)
+titleLabel.Position = UDim2.new(0, 10, 0, 5)
+titleLabel.BackgroundTransparency = 1
+titleLabel.Text = "MM ESP Control"
+titleLabel.TextSize = 16
+titleLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+titleLabel.Font = Enum.Font.Gotham
+titleLabel.Parent = mainFrame
+
+-- // MM ESP Button
+local mmEspButton = Instance.new("TextButton")
+mmEspButton.Name = "MMEspButton"
+mmEspButton.Size = UDim2.new(1, -20, 0, 40)
+mmEspButton.Position = UDim2.new(0, 10, 0, 45)
+mmEspButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+mmEspButton.BorderSizePixel = 0
+mmEspButton.Text = "MM ESP: OFF"
+mmEspButton.TextSize = 14
+mmEspButton.TextColor3 = Color3.fromRGB(255, 100, 100)
+mmEspButton.Font = Enum.Font.Gotham
+mmEspButton.Parent = mainFrame
+
+local espButtonCorner = Instance.new("UICorner")
+espButtonCorner.CornerRadius = UDim.new(0, 10)
+espButtonCorner.Parent = mmEspButton
+
+-- // Auto Aim Button
+local autoAimButton = Instance.new("TextButton")
+autoAimButton.Name = "AutoAimButton"
+autoAimButton.Size = UDim2.new(1, -20, 0, 40)
+autoAimButton.Position = UDim2.new(0, 10, 0, 95)
+autoAimButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+autoAimButton.BorderSizePixel = 0
+autoAimButton.Text = "Auto Aim: OFF"
+autoAimButton.TextSize = 14
+autoAimButton.TextColor3 = Color3.fromRGB(255, 100, 100)
+autoAimButton.Font = Enum.Font.Gotham
+autoAimButton.Parent = mainFrame
+
+local aimButtonCorner = Instance.new("UICorner")
+aimButtonCorner.CornerRadius = UDim.new(0, 10)
+aimButtonCorner.Parent = autoAimButton
+
+-- // Статус текст
+local statusLabel = Instance.new("TextLabel")
+statusLabel.Name = "StatusLabel"
+statusLabel.Size = UDim2.new(1, -20, 0, 20)
+statusLabel.Position = UDim2.new(0, 10, 0, 140)
+statusLabel.BackgroundTransparency = 1
+statusLabel.Text = "Red=Knife | Blue=Gun | Green=No Weapon"
+statusLabel.TextSize = 10
+statusLabel.TextColor3 = Color3.fromRGB(150, 150, 150)
+statusLabel.Font = Enum.Font.Gotham
+statusLabel.Parent = mainFrame
+
+-- // Переменные
+local mmEspEnabled = false
+local autoAimEnabled = false
+local mmEspHighlights = {}
+local autoAimConnection = nil
+
+-- // Weapon detection functions
+local function isKnife(name)
+    name = string.lower(name)
+    return string.find(name, "knife") or 
+           string.find(name, "machete") or 
+           string.find(name, "dagger") or
+           string.find(name, "blade") or
+           string.find(name, "sword") or
+           string.find(name, "нож")
+end
+
+local function isGun(name)
+    name = string.lower(name)
+    return string.find(name, "gun") or 
+           string.find(name, "pistol") or 
+           string.find(name, "revolver") or 
+           string.find(name, "rifle") or 
+           string.find(name, "smg") or 
+           string.find(name, "shotgun") or 
+           string.find(name, "weapon") or
+           string.find(name, "пистолет")
+end
+
+-- // Function to determine player role
+local function getPlayerRole(plr)
+    if not plr.Character then
+        return "unknown"
+    end
+    
+    local hasKnife = false
+    local hasGun = false
+    
+    -- Check backpack FIRST (items about to be equipped)
+    local backpack = plr:FindFirstChild("Backpack")
+    if backpack then
+        for _, item in pairs(backpack:GetChildren()) do
+            if item:IsA("Tool") then
+                local name = item.Name
+                if isKnife(name) then hasKnife = true end
+                if isGun(name) then hasGun = true end
+            end
+        end
+    end
+    
+    -- Check character (equipped items)
+    for _, item in pairs(plr.Character:GetChildren()) do
+        if item:IsA("Tool") then
+            local name = item.Name
+            if isKnife(name) then hasKnife = true end
+            if isGun(name) then hasGun = true end
+        end
+    end
+    
+    if hasKnife then
+        return "murderer"
+    elseif hasGun then
+        return "sheriff"
+    else
+        return "innocent"
+    end
+end
+
+-- // Function to find closest target
+local function findClosestTarget(role)
+    if not camera then return nil end
+    
+    local closestTarget = nil
+    local closestDistance = math.huge
+    local myPos = camera.CFrame.Position
+    
+    if role == "murderer" then
+        -- First priority: find sheriff
+        for _, plr in pairs(Players:GetPlayers()) do
+            if plr ~= player and plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") and plr.Character:FindFirstChild("Humanoid") and plr.Character.Humanoid.Health > 0 then
+                local targetRole = getPlayerRole(plr)
+                if targetRole == "sheriff" then
+                    local distance = (myPos - plr.Character.HumanoidRootPart.Position).Magnitude
+                    if distance < closestDistance then
+                        closestDistance = distance
+                        closestTarget = plr
+                    end
+                end
+            end
+        end
+        
+        -- Second priority: find innocent if no sheriff found
+        if not closestTarget then
+            closestDistance = math.huge
+            for _, plr in pairs(Players:GetPlayers()) do
+                if plr ~= player and plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") and plr.Character:FindFirstChild("Humanoid") and plr.Character.Humanoid.Health > 0 then
+                    local targetRole = getPlayerRole(plr)
+                    if targetRole == "innocent" then
+                        local distance = (myPos - plr.Character.HumanoidRootPart.Position).Magnitude
+                        if distance < closestDistance then
+                            closestDistance = distance
+                            closestTarget = plr
+                        end
+                    end
+                end
+            end
+        end
+    elseif role == "sheriff" then
+        -- Sheriff targets murderer
+        for _, plr in pairs(Players:GetPlayers()) do
+            if plr ~= player and plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") and plr.Character:FindFirstChild("Humanoid") and plr.Character.Humanoid.Health > 0 then
+                local targetRole = getPlayerRole(plr)
+                if targetRole == "murderer" then
+                    local distance = (myPos - plr.Character.HumanoidRootPart.Position).Magnitude
+                    if distance < closestDistance then
+                        closestDistance = distance
+                        closestTarget = plr
+                    end
+                end
+            end
+        end
+    end
+    
+    return closestTarget
+end
+
+-- // Auto aim function - INSTANT LOCK
+local function startAutoAim()
+    if autoAimConnection then
+        autoAimConnection:Disconnect()
+        autoAimConnection = nil
+    end
+    
+    autoAimConnection = RunService.RenderStepped:Connect(function()
+        if not autoAimEnabled then
+            if autoAimConnection then
+                autoAimConnection:Disconnect()
+                autoAimConnection = nil
+            end
+            return
+        end
+        
+        if not camera then
+            camera = Workspace.CurrentCamera
+            return
+        end
+        
+        local myRole = getPlayerRole(player)
+        
+        -- Only aim if not innocent
+        if myRole == "innocent" then
+            return
+        end
+        
+        local target = findClosestTarget(myRole)
+        
+        if target and target.Character and target.Character:FindFirstChild("HumanoidRootPart") and target.Character:FindFirstChild("Humanoid") and target.Character.Humanoid.Health > 0 then
+            local targetPos = target.Character.HumanoidRootPart.Position
+            local cameraPos = camera.CFrame.Position
+            
+            -- INSTANT lock - camera directly looks at target without interpolation
+            camera.CFrame = CFrame.lookAt(cameraPos, targetPos)
+        end
+    end)
+end
+
+-- // Функция для перетаскивания мини-кнопки
+local dragging = false
+local dragStart = nil
+local startPos = nil
+
+minimizedButton.InputBegan:Connect(function(input)
+    if input.UserInputType == Enum.UserInputType.Touch then
+        dragging = true
+        dragStart = input.Position
+        startPos = minimizedButton.Position
+        input.Changed:Connect(function()
+            if input.UserInputState == Enum.UserInputState.End then
+                dragging = false
+            end
+        end)
+    end
+end)
+
+minimizedButton.InputChanged:Connect(function(input)
+    if dragging and input.UserInputType == Enum.UserInputType.Touch then
+        local delta = input.Position - dragStart
+        minimizedButton.Position = UDim2.new(
+            startPos.X.Scale, 
+            startPos.X.Offset + delta.X, 
+            startPos.Y.Scale, 
+            startPos.Y.Offset + delta.Y
+        )
+    end
+end)
+
+-- // Развернуть/Свернуть
+minimizedButton.MouseButton1Click:Connect(function()
+    if not dragging then
+        minimizedButton.Visible = false
+        mainFrame.Visible = true
+    end
+end)
+
+minimizeButton.MouseButton1Click:Connect(function()
+    mainFrame.Visible = false
+    minimizedButton.Visible = true
+end)
+
+-- // MM ESP function
+local function toggleMMESP()
+    if mmEspEnabled then
+        -- Выключить ESP
+        mmEspEnabled = false
+        for _, h in pairs(mmEspHighlights) do 
+            if h and h.Parent then 
+                h:Destroy() 
+            end 
+        end
+        mmEspHighlights = {}
+        mmEspButton.Text = "MM ESP: OFF"
+        mmEspButton.TextColor3 = Color3.fromRGB(255, 100, 100)
+    else
+        -- Включить ESP
+        mmEspEnabled = true
+        mmEspButton.Text = "MM ESP: ON"
+        mmEspButton.TextColor3 = Color3.fromRGB(100, 255, 100)
+        
+        spawn(function()
+            while mmEspEnabled do
+                for _, plr in pairs(Players:GetPlayers()) do
+                    if plr == player or not plr.Character then 
+                        continue 
+                    end
+                    
+                    local role = getPlayerRole(plr)
+                    
+                    -- Создать или получить Highlight
+                    local highlight = plr.Character:FindFirstChild("MMEspHighlight")
+                    if not highlight then
+                        highlight = Instance.new("Highlight")
+                        highlight.Name = "MMEspHighlight"
+                        highlight.FillTransparency = 0.2
+                        highlight.OutlineTransparency = 0
+                        highlight.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
+                        highlight.Parent = plr.Character
+                        table.insert(mmEspHighlights, highlight)
+                    end
+                    
+                    -- Установка цвета
+                    if role == "murderer" then
+                        highlight.FillColor = Color3.fromRGB(255, 0, 0) -- Красный = Убийца
+                        highlight.OutlineColor = Color3.fromRGB(255, 0, 0)
+                    elseif role == "sheriff" then
+                        highlight.FillColor = Color3.fromRGB(0, 0, 255) -- Синий = Шериф
+                        highlight.OutlineColor = Color3.fromRGB(0, 0, 255)
+                    else
+                        highlight.FillColor = Color3.fromRGB(0, 255, 0) -- Зеленый = Невинный
+                        highlight.OutlineColor = Color3.fromRGB(0, 255, 0)
+                    end
+                end
+                wait(0.1)
+            end
+        end)
+    end
+end
+
+-- // Auto Aim toggle function
+local function toggleAutoAim()
+    autoAimEnabled = not autoAimEnabled
+    
+    if autoAimEnabled then
+        autoAimButton.Text = "Auto Aim: ON"
+        autoAimButton.TextColor3 = Color3.fromRGB(100, 255, 100)
+        -- Ensure camera reference is fresh
+        camera = Workspace.CurrentCamera
+        startAutoAim()
+    else
+        autoAimButton.Text = "Auto Aim: OFF"
+        autoAimButton.TextColor3 = Color3.fromRGB(255, 100, 100)
+        if autoAimConnection then
+            autoAimConnection:Disconnect()
+            autoAimConnection = nil
+        end
+    end
+end
+
+-- // Подключение кнопок
+mmEspButton.MouseButton1Click:Connect(toggleMMESP)
+autoAimButton.MouseButton1Click:Connect(toggleAutoAim)
+
+-- // Очистка при уходе игрока
+Players.PlayerRemoving:Connect(function(plr)
+    local highlight = plr.Character and plr.Character:FindFirstChild("MMEspHighlight")
+    if highlight then
+        highlight:Destroy()
+        for i, h in pairs(mmEspHighlights) do
+            if h == highlight then
+                table.remove(mmEspHighlights, i)
+                break
+            end
+        end
+    end
+end)
+
+-- // Clean up on player respawn
+player.CharacterAdded:Connect(function()
+    if autoAimEnabled then
+        wait(0.5) -- Small delay for character to load
+        camera = Workspace.CurrentCamera
+        startAutoAim()
+    end
+end)
+
+print("MM ESP Hack with Instant Auto Aim Loaded!")
+print("Tap 'M' to open control panel")
+print("Red = Murderer | Blue = Sheriff | Green = Innocent")
+print("Auto Aim: INSTANT LOCK - Murderer -> Sheriff (or Innocent), Sheriff -> Murderer")
